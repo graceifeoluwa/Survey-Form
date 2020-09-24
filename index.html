@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<div class="container">
+	<header class="header">
+		<h1 id="title">BRACKISH BACKERY FEEBACK FORM</h1>
+		<p id="description">Thank your for patronising us.<br>Please fill this to help us serve you better.</p>
+	</header>	
+	<form id="survey-form">
+		<div class="form-group">
+			<label id="name-label" for="name">Name:</label>
+			<input id="name" type="name" name="name"  class="form-control" placeholder="Please enter your name" required>
+		</div>
+		<div class="form-group">
+			<label id="email-label" for="email">Email:</label>
+			<input id="email" type="email" name="email"  class="form-control" placeholder="Enter your Email" required>
+		</div>
+		<div class="form-group">
+			<label id="number-label" for="number">Age<span class="clue">(optional):</span></label>
+			<input  id="number" type="number" name="age" min="18" max="90" class="form-control" placeholder=" Age">
+		</div>
+		<div class="form-group">
+			<label>Gender:</label>
+			<select id="dropdown" class="form-control" name="gender">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="prefer not">Prefer not to say</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<p>Which of our products have you purchased in the last 2 months?
+			<span class="clue">(Check all that apply)</span></p>
+			<label><input class="input-checkbox" value="plate cake" type="checkbox" name="cake">Classic Foil Plate Cake</label>
+			<label><input class="input-checkbox" value="double cake" type="checkbox" name="cake">Special Double Flavoured Cake</label>
+			<label><input class="input-checkbox" value="all-in-one cake" type="checkbox" name="cake">All-in-one Fruit Cake</label>
+			<label><input class="input-checkbox" value="white bread" type="checkbox" name="bread">White Family Loaf</label>
+			<label><input class="input-checkbox" value="wheat bread" type="checkbox" name="bread">Whole Wheat Family Loaf</label>
+			<label><input class="input-checkbox" value="special loaf" type="checkbox" name="bread">Special Chocolate Bread</label>
+			<label><input class="input-checkbox" value="pastries" type="checkbox" name="pastry">3-in-1 Pastries Box</label>
+		</div>
+		<div class="form-group">
+			<p>What is your best product?</p>
+			<select id="dropdown" class="form-control" name="gender">
+			<option value="pastries">Pastries</option>
+			<option value="special loaf">Special chocolate Bread</option>
+			<option value="wheat bread">Wheat Family Loaf</option>
+			<option value="white bread">White Family Loaf</option>
+			<option value="all-in-one">All-in-one Fruit Cake</option>
+			<option value="wheat bread">Wheat Family Loaf</option>
+			<option value="double flavour">Special Double Flavoured Cake</option>
+			<option value="plate cake">Classic Foil Plate Cake</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<p>What are your most Preferred Flavour(s)?
+			<span class="clue">(Check all that apply)</span></p>
+			<label><input value="chocolate" class="input-checkbox"  type="checkbox" name="cake">Chocolate</label>
+			<label><input value="strawberry" class="input-checkbox"  type="checkbox" name="cake">Strawberry</label>
+			<label><input value="vanilla" class="input-checkbox"  type="checkbox" name="cake">Vanilla</label>
+			<label><input value="red velvet" class="input-checkbox"  type="checkbox" name="cake">Red Velvet</label>
+			<label><input value="cookies and cream" class="input-checkbox"  type="checkbox" name="cake">Cookies and Cream</label>
+			<label><input value="mixed fruit" class="input-checkbox"  type="checkbox" name="cake">Mixed Fruit</label>
+			<label><input class="input-checkbox" value="carrot" type="checkbox" name="cake">Carrot</label>			
+		</div>
+		<div class="form-group">
+			<p>Overall,How satisfied are you with our products/services?</p>
+			<label><input class="input-radio" value="satisfied" type="radio" name="customer-experience">Satisfied</label>
+			<label><input class="input-radio" value="not-satisfied" type="radio" name="customer-experience">Not-Satisfied</label>
+			<label><input class="input-radio" value="indifferent" type="radio" name="customer-experience">Indifferent</label>
+		</div>
+		<div class="form-group">
+			<p>Any Comments/Suggestions or Improvements?</p>
+			<textarea id="comments" class="input-textarea" name="comments" placeholder="Enter comments here..."></textarea>
+		</div>
+		<div class="form-group">
+			<button type="submit" class="submit-button" id="submit">Submit</button>
+		</div>
+			
+	</form>
+	</div>
+
+</body>
+</html>
